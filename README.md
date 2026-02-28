@@ -49,7 +49,7 @@ python3 tools/check_scope_tags.py
 - Board columns: `Backlog`, `Ready`, `In Progress`, `Review`, `Done`
 - Setup helpers:
   - `tools/bootstrap_github_meta.sh` for labels/milestones/issues
-  - `tools/bootstrap_project_board.sh` for project board creation and status options (requires `project` token scopes)
+  - `tools/bootstrap_project_board.sh` for project board creation, workflow field setup, and issue sync (requires `project` token scopes)
 
 ## Suggested Delivery Cadence
 - Day 1: repository bootstrap + issue/project setup
