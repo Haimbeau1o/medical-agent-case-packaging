@@ -1,0 +1,28 @@
+name: Compliance Workstream
+description: Workstream C compliance and risk gate task
+title: "[C] "
+labels:
+  - workstream:C-compliance
+  - type:doc
+body:
+  - type: textarea
+    id: policy
+    attributes:
+      label: Policy/Boundary Requirement
+      description: Which constraint must be reflected in design/docs?
+    validations:
+      required: true
+  - type: textarea
+    id: gate
+    attributes:
+      label: Gate Definition
+      description: Release gate and pass/fail rule
+    validations:
+      required: true
+  - type: textarea
+    id: interview
+    attributes:
+      label: Interview Defense
+      description: How to explain this in interview
+    validations:
+      required: true

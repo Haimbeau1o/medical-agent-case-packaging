@@ -1,0 +1,28 @@
+name: Architecture Workstream
+description: Workstream A architecture task
+title: "[A] "
+labels:
+  - workstream:A-architecture
+  - type:doc
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What architecture deliverable are we producing?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: In-scope and out-of-scope
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Reviewable and testable criteria
+    validations:
+      required: true

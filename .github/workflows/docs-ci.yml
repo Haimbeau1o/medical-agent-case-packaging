@@ -1,0 +1,27 @@
+name: docs-ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run evidence validator
+        run: python3 tools/validate_evidence.py
+
+      - name: Run story card validator
+        run: python3 tools/validate_story_cards.py
+
+      - name: Run scope tag checker
+        run: python3 tools/check_scope_tags.py

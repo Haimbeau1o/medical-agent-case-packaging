@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Story Card Frontmatter",
+  "type": "object",
+  "required": [
+    "problem",
+    "risk",
+    "solution",
+    "why_this_design",
+    "metrics_with_scope",
+    "failure_case",
+    "iteration",
+    "my_role",
+    "ai_acceleration_point"
+  ],
+  "properties": {
+    "problem": {"type": "string", "minLength": 5},
+    "risk": {"type": "string", "minLength": 3},
+    "solution": {"type": "string", "minLength": 5},
+    "why_this_design": {"type": "string", "minLength": 5},
+    "metrics_with_scope": {"type": "string", "minLength": 3},
+    "failure_case": {"type": "string", "minLength": 3},
+    "iteration": {"type": "string", "minLength": 3},
+    "my_role": {"type": "string", "minLength": 3},
+    "ai_acceleration_point": {"type": "string", "minLength": 3}
+  },
+  "additionalProperties": false
+}

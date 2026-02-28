@@ -1,0 +1,28 @@
+name: Evidence Workstream
+description: Workstream B evidence and metrics task
+title: "[B] "
+labels:
+  - workstream:B-evidence
+  - type:doc
+body:
+  - type: textarea
+    id: claim
+    attributes:
+      label: Claim to Support
+      description: Which claim is being added or updated?
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Evidence Source
+      description: Dataset/script/path and scope
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation Plan
+      description: How reproducibility will be checked
+    validations:
+      required: true

@@ -1,0 +1,28 @@
+name: Storytelling Workstream
+description: Workstream D candidate narrative task
+title: "[D] "
+labels:
+  - workstream:D-storytelling
+  - type:doc
+body:
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Scenario
+      description: Which project scenario is being packaged?
+    validations:
+      required: true
+  - type: textarea
+    id: role
+    attributes:
+      label: Personal Ownership
+      description: Clear statement of your action and decision
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and Scope
+      description: Which metric and scope back this statement?
+    validations:
+      required: true
