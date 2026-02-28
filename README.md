@@ -47,6 +47,9 @@ python3 tools/check_scope_tags.py
 - Labels: `workstream:*`, `type:*`, `priority:*`, `status:*`
 - Milestones: `M1` to `M5`
 - Board columns: `Backlog`, `Ready`, `In Progress`, `Review`, `Done`
+- Setup helpers:
+  - `tools/bootstrap_github_meta.sh` for labels/milestones/issues
+  - `tools/bootstrap_project_board.sh` for project board creation and status options (requires `project` token scopes)
 
 ## Suggested Delivery Cadence
 - Day 1: repository bootstrap + issue/project setup
